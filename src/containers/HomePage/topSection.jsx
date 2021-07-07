@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+
 import { BrandLogo } from "../../components/brandLogo";
+import { Button } from "../../components/button";
+import { Marginer } from "../../components/marginer";
 
 import TopSectionBackgroundImg from "../../images/landing-page.jpg";
 import TheBestSpecialistsImg from "../../images/Work only with the best.png";
@@ -58,10 +61,15 @@ export function TopSection(props) {
       <BackgroundFilter>
         <TopSectionInnerContainer>
           <LogoContainer>
-            <BrandLogo logoSize={60} textSize={50}/>
+            <BrandLogo logoSize={65} textSize={55} />
+
+            <Marginer direction="vertical" margin={8} />
 
             <SloganText>Find the right specialist</SloganText>
             <SloganText>For the job</SloganText>
+
+            <Marginer direction="vertical" margin={15} />
+            <Button>Join Now</Button>
           </LogoContainer>
 
           <StandoutImage>
